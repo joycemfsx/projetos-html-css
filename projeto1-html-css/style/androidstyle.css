@@ -52,6 +52,15 @@ nav{
 
 main{
     background-color: #ffffff;
+    text-align: justify;
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 0 8px #00000050;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 main h1 {
@@ -64,7 +73,19 @@ main h2{
     font-family: var(--fonte-android);
 }
 
+main img{
+    width: 100%;
+}
+
+main img.pequena {
+    width: 50%;
+    display: block; /* centraliza a imagem, pois ela, por padrão, não é um bloco */
+    margin: auto;
+}
+
 footer{
     background-color:var(--cor4);
     color: #ffffff;
+    font-size: 12px;
+    text-align: center;
 }

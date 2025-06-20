@@ -1,2 +1,3 @@
 # projetos-html-css
-projetos de aprendizagem
+
+Projetos realizados durante o curso de HTML5/CSS3.

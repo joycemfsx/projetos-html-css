@@ -38,7 +38,7 @@ a.external::after{
 
 header{
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
-    min-height: 150px;
+    min-height: 120px;
     text-align: center;
     padding-top: 40px;
 }
@@ -47,17 +47,20 @@ header > h1 {
     color:#ffffff;
     font-family: var(--fonte-destaque);
     font-size: 3em;
-    margin-bottom: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
     text-shadow: 3px 3px 8px #00000079;
 }
 
 header > p {
     color: #ffffff;
     font-family: var(--fonte-padrao);
-    font-size: 1.2em;
-    max-width: 600px;
+    font-size: 1.1em;
+    font-weight: normal;
+    max-width: 650px;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 10px;
     margin: auto;
     text-shadow: 3px 3px 8px #0000005a;
 }
@@ -78,6 +81,8 @@ nav > a {
 
 nav > a:hover {
     background-color: var(--cor2);
+    border-radius: 7px 7px 0 0;
+    padding-top: 6px;
 }
 
 main{
@@ -95,12 +100,15 @@ main{
 main h1 {
     color: var(--cor4);
     font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.7em;
 }
 
 main h2{
     color: var(--cor4);
     font-family: var(--fonte-android);
     font-size: 1.4em;
+    font-weight: normal;
     background-image: linear-gradient(to right, var(--cor6), transparent);
     text-indent: 8px;
 }
@@ -140,6 +148,22 @@ main img.pequena {
     max-width: 350px;
     display: block; /* centraliza a imagem, pois ela, por padrão, não é um bloco */
     margin: auto;
+}
+
+main div.video {
+    background-color: var(--cor1);
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.9%;
+    position: relative;
+}
+
+main div.video > iframe {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside{

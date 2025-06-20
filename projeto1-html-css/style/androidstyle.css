@@ -15,11 +15,12 @@
 
 :root{
     --cor0: #DB4B3D;
-    --cor1: #529C73;
+    --cor1: #00A16E;
     --cor2: #3DDB84;
     --cor3: #865752;
-    --cor4: #485C51;
+    --cor4: #3c8358;
     --cor5: #f5f5f5;
+    --cor6: #63f69e;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
@@ -77,7 +78,6 @@ nav > a:hover {
 
 main{
     background-color: #ffffff;
-    text-align: justify;
     min-width: 280px;
     max-width: 1000px;
     margin: auto;
@@ -89,13 +89,43 @@ main{
 }
 
 main h1 {
-    color: var(--cor1);
+    color: var(--cor4);
     font-family: var(--fonte-android);
 }
 
 main h2{
-    color: var(--cor1);
+    color: var(--cor4);
     font-family: var(--fonte-android);
+    font-size: 1.4em;
+    background-image: linear-gradient(to right, var(--cor6), transparent);
+    text-indent: 8px;
+}
+
+main p{
+    margin: 15px 0;
+    text-indent: 35px;
+    text-align: justify;
+    line-height: 1.7em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor1);
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+main a {
+    background-color: var(--cor6);
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
 
 main img{
@@ -103,7 +133,7 @@ main img{
 }
 
 main img.pequena {
-    width: 50%;
+    max-width: 350px;
     display: block; /* centraliza a imagem, pois ela, por padrão, não é um bloco */
     margin: auto;
 }

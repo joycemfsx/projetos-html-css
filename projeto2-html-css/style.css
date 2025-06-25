@@ -117,7 +117,7 @@ footer > p{
     text-align: center;
 }
 
-div.backblack{
+div.blackback{
     background-color: #0000006d;
     padding: 10px;
     display: inline-block; /* caixa se adapta ao tamanho do conteúdo */

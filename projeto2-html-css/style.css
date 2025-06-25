@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor1: #F2DDD0;
+    --cor2: #F2AA52;
+    --cor3: #61463c;
+    --cor4: #D9B4B4;
+    --cor5: #345573;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Passion One';
+    --fonte-principal: 'Sriracha';
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: var(--cor1);
+}
+
+header{
+    min-height: 120px;
+    background-color: #000000;
+    text-align: center;
+    padding-top: 45px;
+}
+
+header > h1{
+    color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    font-size: 10vw; /* 10% da view width --> o texto aumenta/diminui conforme a largura da página (melhor opção enquando não domino MediaQuery) */
+    font-variant: small-caps; /* font-variant: small-caps --> coloca em caixa alta com as iniciais maiores; text-transform: uppercase --> coloca tudo em caixa alta */
+}
+
+header > p{
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    padding-bottom: 45px;
+}
+
+a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+main{
+    font-family: var(--fonte-padrao);
+    padding: 15px;
+}
+
+main p{
+    text-align: justify;
+}
+
+section{
+    font-family: var(--fonte-principal);
+    font-size: 4.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;    
+    padding-left: 15px;
+}
+
+section p{
+    margin-bottom: 1em;
+}
+
+section.normal{
+    background-color: var(--cor1);
+    color: var(--cor3);
+}
+
+section.imagem{
+    background-color: #252525;
+    color: #ffffff;
+    box-shadow: inset 6px 6px 13px 0 #00000083;
+    background-attachment: fixed;
+}
+
+section.imagem p{
+    text-shadow: 2px 2px 1px #0000006a;
+    background-size: cover;
+}
+
+section#img1{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img2{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer{
+    background-color: #000000;
+    padding: 12px;
+}
+
+footer > p{
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    font-size: .8em;
+    text-align: center;
+}
+
+div.backblack{
+    background-color: #0000006d;
+    padding: 10px;
+    display: inline-block; /* caixa se adapta ao tamanho do conteúdo */
+}
+
+div#q1{
+
+}
+
+div#q2{
+
+}

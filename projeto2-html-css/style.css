@@ -72,6 +72,8 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;    
     padding-left: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 section p{
